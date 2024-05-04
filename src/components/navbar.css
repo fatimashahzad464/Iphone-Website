@@ -1,0 +1,296 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+
+  .app__navbar {
+  
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+   
+  }
+
+.nav__brand {
+  text-transform: uppercase;
+}
+.nav__item {
+  
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  padding: 3rem;
+
+}
+
+.nav__item:hover {
+  color: rgb(147, 147, 147);
+}
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.nav__toggler {
+  display: none;
+}
+
+.nav__toggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(255, 255, 255);
+  transition: 0.3s ease-in;
+}
+.app__navbar-logo img {
+  width: 35px;
+  margin-right: 0rem;
+}
+
+
+ /* media queries */
+@media screen and (max-width: 1080px) {
+  .nav__item {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+  }
+}
+/* Active Class */
+.nav__active {
+  transform: translateX(0%);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+
+@media screen and (max-width: 768px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    background: #000;
+    color: black;
+    margin-left: 30rem;
+    border-radius: 3px;
+    padding: 1px;
+  }
+
+  .nav__item {
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    padding: 0;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 0vh;
+    right: 0;
+    height: 28vh;
+    padding: 1rem 26rem 10rem 0rem;
+    font-size: 28px;
+    width: 30vh;
+    color: rgb(0, 0, 0);
+    background: rgb(249, 249, 249);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    z-index: 1000;
+  }
+  .app__navbar-logo img {
+    width: 30px;
+  }
+}
+
+.nav__active {
+  transform: translateX(0%);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+
+@media screen and (max-width: 580px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    background: #000;
+    color: black;
+    margin-left: 25rem;
+    border-radius: 3px;
+    padding: 1px;
+  }
+
+  .nav__item {
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    padding: 0;
+  }
+
+  .nav__menu {
+    position: fixed;
+    right: 0;
+    height: 28vh;
+    padding: 1rem 26rem 10rem 0rem;
+    font-size: 28px;
+    width: 30vh;
+    color: rgb(0, 0, 0);
+    background: rgb(249, 249, 249);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    z-index: 1000;
+  }
+}
+
+.nav__active {
+  transform: translateX(0%);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+.app__navbar-logo img {
+  width: 30px;
+}
+@media screen and (max-width: 495px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    background: black;
+    margin-left: 15rem;
+    border-radius: 3px;
+    padding: 1px;
+  }
+
+  .nav__item {
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    padding: 0;
+  }
+
+  .nav__menu {
+    position: fixed;
+     right: 0;
+    height: 28vh;
+    padding: 1rem 33rem 10rem 0rem;
+    font-size: 28px;
+    width: 38vh;
+    color: rgb(0, 0, 0);
+    background: rgb(249, 249, 249);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    z-index: 1000;
+  }
+}
+
+.nav__active {
+  transform: translateX(0%);
+}
+
+.app__navbar-logo img {
+  width: 30px;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+
+@media screen and (max-width: 415px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    background: black;
+    margin-left: 20rem;
+    border-radius: 3px;
+    padding: 1px;
+  }
+
+  .nav__item {
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    padding: 0;
+  }
+
+  .nav__menu {
+    position: fixed;
+    right: 0;
+    height: 33vh;
+    padding: 1rem 16rem 10rem 0rem;
+    font-size: 28px;
+    width: 20vh;
+    color: rgb(0, 0, 0);
+    background: rgb(249, 249, 249);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    z-index: 1000;
+  }
+}
+
+.nav__active {
+  transform: translateX(0%);
+}
+
+.app__navbar-logo img {
+  width: 30px;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
